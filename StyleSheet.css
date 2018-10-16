@@ -1,6 +1,11 @@
 ﻿body {
 }
-
+a {
+    color: #00b5ad;
+}
+p {
+   align-self:baseline;
+}
 .tabs {
     position: relative;
     min-height: 200px; /* This part sucks */
