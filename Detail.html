@@ -26,7 +26,9 @@
             </p>
         </div>
         <div class="col-8">
-            <img alt="falafel"/>
+            <div class="card" style="width: 12rem;">
+                <img class="card-img-top" src="/NextCase/Pics/falafel.jpg" alt="Falafel">
+            </div>
         </div>
         <div class="col-2">
             <p style="text-align:right">
@@ -42,7 +44,14 @@
             </p>
         </div>
         <div class="col-8">
-
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'Beschreibung')">Beschreibung</button>
+                <button class="tablinks" onclick="openCity(event, 'Zutaten')">Zutaten</button>
+                <button class="tablinks" onclick="openCity(event, 'Bewertungen')">Bewertungen</button>
+            </div>
+            <div id="Beschreibung" class="tabcontent">
+                <p>Teigtaschen mit Falafel aus Kichererbsen und Sesam, dazu passt hervorragend der <a href="#">Krautsalat</a></p>
+            </div>
         </div>
         <div class="col-2">
 
