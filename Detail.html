@@ -1,103 +1,130 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <meta charset="utf-8" />
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> -->
+    <title>Detail</title>
     <link href="Bootstrap/bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="StyleSheet.css" rel="stylesheet">
-
+    <meta charset="utf-8" />
 </head>
 <body>
-
-    <div class="row">
-        <div class="offset-2 col-8">
-            <h1>
-                Details für "Falafel"
-            </h1>
-        </div>
-        <div class="offset-10 col-2">
-            <p style="text-align:right">
-                <b>Gast</b>-Preis
-            </p>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-2">
-            
-            <p>
-                Login
-            </p>
-            <div class="border">
-                <br />
-                <input type="text" value="Benutzer">
-                <br />
-                <input type="text" value="********">
-                <br />
-                <a href="#"><u>Anmelden</u></a>
+    <div class="offset-1 container-fluid col-10">
+        <header>
+            <div class="row">
+                <div class="col-2">
+                    <h1> e-Mensa </h1>
+                </div>
+                <div class="col-8 text-center headerAllign">
+                    <p>
+                        <a href="/NextCase/Start.html"><u>Start</u></a> |
+                        <a href="/NextCase/Produkte.html"><u>Mahlzeit</u></a> |
+                        <a href="#"><u>Bestellungen</u></a> |
+                        <a href="https://www.fh-aachen.de/" target="_blank"><u>Fh-Aachen</u></a>
+                        <!--|
+                        <a href="https://www.fh-aachen.de/menschen/hoever/" target="_blank"><u>Hoever</u></a>-->
+                    </p>
+                </div>
+                <div class="col-2 headerAllign">
+                    <form method="get" action="http://www.google.com/search">
+                        <i class="fas fa-search"><input type="search" name="q" placeholder="" /></i>
+                        <input type="hidden" name="sitesearch" value="fh-aachen.de" />
+                    </form>
+                </div>
             </div>
-
-
-        </div>
-        <div class="col-8">
-            <div class="card" style="width: 34rem;">
-                <img class="card-img-top" src="/NextCase/Pics/falafel.jpg" alt="Falafel">
+            <hr />
+        </header>
+        <div class="row">
+            <div class="offset-2 col-8">
+                <h1>
+                    Details für "Falafel"
+                </h1>
             </div>
-        </div>
-        <div class="col-2">
-            <p style="text-align:right">
-                5,95€
-            </p>
-            <button type="button"><i class="fas fa-utensils"></i>Vorbestellen</button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-2">
-            <p>
-                Melden Sie sich jetzt an, um die wirklich viel günstigeren Preise für Mitarbeiter oder Studenten zu sehen.
-            </p>
-        </div>
-        <div class="col-8">
-            <div class="tabs">
-                <div class="tab ">
-                    <input type="radio" id="tab-1" name="tab-group-1" checked>
-                    <label for="tab-1">Beschreibung</label>
-                    <div class="content">
-                        <p>Teigtaschen mit Falafel aus Kichererbsen und Sesam, dazu passt hervorragend der <a href="#"><u>Krautsalat</u></a></p>
-                    </div>
-                </div>
-
-                <div class="tab">
-                    <input type="radio" id="tab-2" name="tab-group-1">
-                    <label for="tab-2">Zutaten</label>
-                    <div class="content">
-                        <p>KEK</p>
-                    </div>
-                </div>
-
-                <div class="tab">
-                    <input type="radio" id="tab-3" name="tab-group-1">
-                    <label for="tab-3">Bewertungen</label>
-                    <div class="content">
-                        <p>Miserabel</p>
-                    </div>
-                </div>
-
+            <div class="offset-10 col-2">
+                <h2 style="text-align:right">
+                    <b>Gast</b>-Preis
+                </h2>
             </div>
         </div>
-        <div class="col-2">
-            <form action="http://bc5.m2c-lab.fh-aachen.de/form.php" method="post">
-                <textarea placeholder="Bemerkung" name="bemerkung"></textarea>
-                <input type="text" name="benutzer" placeholder="Name">
-                <input type="number" name="bewertung" placeholder="5" min="1" max="5">
-                <input type="hidden" name="matrikel" value="3033836">
-                <input type="hidden" name="kontrolle" value="sch" />
-                <button type="submit" name="action" >Abschicken</button>
-            </form>
+
+        <div class="row">
+            <div class="col-2">
+                <p>Login</p>
+                <div class="border">
+                    <br />
+                    <input type="text" value="Benutzer">
+                    <br />
+                    <input type="password" value="********">
+                    <br />
+                    <a href="#"><u>Anmelden</u></a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="card" style="width: 34rem;">
+                    <img class="card-img-top" src="/NextCase/Pics/falafel.jpg" alt="Falafel">
+                </div>
+            </div>
+            <div class="col-2">
+                <h2 style="text-align:right">5,95€</h2>
+                <button type="button" style="align-self:auto"><i class="fas fa-utensils"></i>Vorbestellen</button>
+            </div>
         </div>
-
-    </div>
-
-</body>
+        <div class="row">
+            <div class="col-2">
+                <p>Melden Sie sich jetzt an, um die wirklich viel günstigeren Preise für Mitarbeiter oder Studenten zu sehen.</p>
+            </div>
+            <div class="col-8">
+                <div class="tabs">
+                    <div class="tab ">
+                        <input type="radio" id="tab-1" name="tab-group-1" checked>
+                        <label for="tab-1">Beschreibung</label>
+                        <div class="content">
+                            <p>Teigtaschen mit Falafel aus Kichererbsen und Sesam, dazu passt hervorragend der <a href="#"><u>Krautsalat</u></a></p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" id="tab-2" name="tab-group-1">
+                        <label for="tab-2">Zutaten</label>
+                        <div class="content">
+                            <p>Ziege</p>
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <input type="radio" id="tab-3" name="tab-group-1">
+                        <label for="tab-3">Bewertungen</label>
+                        <div class="content">
+                            <p>3,5 von 2 Sternen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <form action="http://bc5.m2c-lab.fh-aachen.de/form.php" method="post">
+                    <textarea placeholder="Bemerkung" name="bemerkung"></textarea>
+                    <input type="text" name="benutzer" placeholder="Name">
+                    <input type="number" name="bewertung" placeholder="5" min="1" max="5">
+                    <input type="hidden" name="matrikel" value="3033836">
+                    <input type="hidden" name="kontrolle" value="sch" />
+                    <button type="submit" name="action">Abschicken</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <hr />
+            <div class="row">
+                <div class="col-2">
+                    <p> (c) 2017 DBWT </p>
+                </div>
+                <div class="col-8 text-center footerAllign">
+                    <p>
+                        <a href="#"><u>Login</u></a> |
+                        <a href="#"><u>Registrieren</u></a> |
+                        <a href="#"><u>Zutatenliste</u></a> |
+                        <a href="/NextCase/Impressum.html"><u>Impressum</u></a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+       </div>
+    </body>
 </html>

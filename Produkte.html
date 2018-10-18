@@ -1,106 +1,151 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-	<meta charset="utf-8" />
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> -->
+    <title>Produkte</title>
     <link href="Bootstrap/bootstrap-4.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="StyleSheet.css" rel="stylesheet">
+    <meta charset="utf-8" />
 </head>
 <body>
-    <div class="row">
-        <div class="offset-4 col-8">
-            <h1>
-                Verfügbare Speisen (Bestseller)
-            </h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-4">
-            <p>
-                Speisenliste filtern
-            </p>
-            <form>
-                <div class="border">
-                    <br />
-                    <input list="Kategorien">
-                    <datalist id="Kategorien">
-                        <option value="Kategorie1">
-                        <option value="Kategorie2">
-                        <option value="Kategorie3">
-                        <option value="Kategorie4">
-                        <option value="Kategorie5">
-                    </datalist>
-                    <br>
-                    <input type="checkbox"> nur verfügbare<br>
-                    <input type="checkbox"> nur vegetarische<br>
-                    <input type="checkbox"> nur vegane<br>
-                    <button type="button">Speisen Filtern</button>
-                </div>
-            </form>
-        </div>
-        <div class="col-8">
+    <div class="offset-1 container-fluid col-10">
+        <header>
             <div class="row">
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/NextCase/Pics/wok.jpg" alt="Wok">
-                    <div class="card-body">
-                        <h5 class="card-title">Curry Wok</h5>
-                        <a href="#" class="btn btn-primary"><u>Details</u></a>
-                    </div>
+                <div class="col-2">
+                    <h1> e-Mensa </h1>
                 </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/NextCase/Pics/schnitzel.jpg" alt="Schnitzel">
-                    <div class="card-body">
-                        <h5 class="card-title">Schnitzel</h5>
-                        <a href="#" class="btn btn-primary"><u>Details</u></a>
-                    </div>
+                <div class="col-8 text-center headerAllign">
+                    <p>
+                        <a href="/NextCase/Start.html"><u>Start</u></a> |
+                        <u>Mahlzeit</u> |
+                        <a href="#"><u>Bestellungen</u></a> |
+                        <a href="https://www.fh-aachen.de/" target="_blank"><u>Fh-Aachen</u></a>
+                        <!--|
+                        <a href="https://www.fh-aachen.de/menschen/hoever/" target="_blank"><u>Hoever</u></a>-->
+                    </p>
                 </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/NextCase/Pics/bratrolle.jpg" alt="Bratrolle">
-                    <div class="card-body">
-                        <h5 class="card-title">Bratrolle</h5>
-                        <a href="#" class="btn btn-primary"><u>Details</u></a>
-                    </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/NextCase/Pics/krautsalat.jpg" alt="krautsalat">
-                    <div class="card-body">
-                        <h5 class="card-title">Krautsalat</h5>
-                        <a href="#" class="btn btn-primary"><u>Details</u></a>
-                    </div>
+                <div class="col-2 headerAllign">
+                    <form method="get" action="http://www.google.com/search">
+                        <i class="fas fa-search"><input type="search" name="q" placeholder="" /></i>
+                        <input type="hidden" name="sitesearch" value="fh-aachen.de" />
+                    </form>
                 </div>
             </div>
+            <hr />
+        </header>
+        <div class="row">
+            <div class="offset-4 col-8">
+                <h1>
+                    Verfügbare Speisen (Bestseller)
+                </h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p>
+                    Speisenliste filtern
+                </p>
+                <form>
+                    <div class="border">
+                        <br />
+                        <input list="Kategorien">
+                        <datalist id="Kategorien">
+                            <option value="Kategorie1">
+                            <option value="Kategorie2">
+                            <option value="Kategorie3">
+                            <option value="Kategorie4">
+                            <option value="Kategorie5">
+                        </datalist>
+                        <br>
+                        <input type="checkbox"> nur verfügbare<br>
+                        <input type="checkbox"> nur vegetarische<br>
+                        <input type="checkbox"> nur vegane<br>
+                        <button type="button">Speisen Filtern</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-8">
+                <div class="row">
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-top" src="/NextCase/Pics/wok.jpg" alt="Wok">
+                        <div class="card-body">
+                            <h5 class="card-title">Curry Wok</h5>
+                            <a href="#" class="btn btn-primary"><u>Details</u></a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-top" src="/NextCase/Pics/schnitzel.jpg" alt="Schnitzel">
+                        <div class="card-body">
+                            <h5 class="card-title">Schnitzel</h5>
+                            <a href="#" class="btn btn-primary"><u>Details</u></a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-top" src="/NextCase/Pics/bratrolle.jpg" alt="Bratrolle">
+                        <div class="card-body">
+                            <h5 class="card-title">Bratrolle</h5>
+                            <a href="#" class="btn btn-primary"><u>Details</u></a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-top" src="/NextCase/Pics/krautsalat.jpg" alt="krautsalat">
+                        <div class="card-body">
+                            <h5 class="card-title">Krautsalat</h5>
+                            <a href="#" class="btn btn-primary"><u>Details</u></a>
+                        </div>
+                    </div>
+                </div>
 
-            <div class="row">
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/NextCase/Pics/falafel.jpg" alt="Falafel">
-                    <div class="card-body">
-                        <h5 class="card-title">Falafel</h5>
-                        <a href="/NextCase/Detail.html" class="btn btn-primary"><u>Details</u></a>
+                <div class="row">
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-top" src="/NextCase/Pics/falafel.jpg" alt="Falafel">
+                        <div class="card-body">
+                            <h5 class="card-title">Falafel</h5>
+                            <a href="/NextCase/Detail.html" class="btn btn-primary"><u>Details</u></a>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/NextCase/Pics/currywurst.jpg" alt="Currywurst">
-                    <div class="card-body">
-                        <h5 class="card-title">Currywurst</h5>
-                        <a href="#" class="btn btn-primary"><u>Details</u></a>
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-top" src="/NextCase/Pics/currywurst.jpg" alt="Currywurst">
+                        <div class="card-body">
+                            <h5 class="card-title">Currywurst</h5>
+                            <a href="#" class="btn btn-primary"><u>Details</u></a>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/NextCase/Pics/kaesestulle.jpg" alt="Kaesestulle">
-                    <div class="card-body">
-                        <h5 class="card-title">Kaesestulle</h5>
-                        <a href="#" class="btn btn-primary"><u>Details</u></a>
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-top" src="/NextCase/Pics/kaesestulle.jpg" alt="Kaesestulle">
+                        <div class="card-body">
+                            <h5 class="card-title">Kaesestulle</h5>
+                            <a href="#" class="btn btn-primary"><u>Details</u></a>
+                        </div>
                     </div>
-                </div>
-                <div class="card" style="width: 12rem;">
-                    <img class="card-img-top" src="/NextCase/Pics/spiegelei.jpg" alt="Spiegelei">
-                    <div class="card-body">
-                        <h5 class="card-title">Spiegelei</h5>
-                        <a href="#" class="btn btn-primary"><u>Details</u></a>
+                    <div class="card" style="width: 10rem;">
+                        <img class="card-img-top" src="/NextCase/Pics/spiegelei.jpg" alt="Spiegelei">
+                        <div class="card-body">
+                            <h5 class="card-title">Spiegelei</h5>
+                            <a href="#" class="btn btn-primary"><u>Details</u></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
- 
+        <footer>
+            <hr />
+            <div class="row">
+                <div class="col-2">
+                    <p> (c) 2017 DBWT </p>
+                </div>
+                <div class="col-8 text-center footerAllign">
+                    <p>
+                        <a href="#"><u>Login</u></a> |
+                        <a href="#"><u>Registrieren</u></a> |
+                        <a href="#"><u>Zutatenliste</u></a> |
+                        <a href="/NextCase/Impressum.html"><u>Impressum</u></a>
+                    </p>
+                </div>
+
+            </div>
+        </footer>
+      </div>
 </body>
 </html>
